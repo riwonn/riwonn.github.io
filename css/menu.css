@@ -362,9 +362,13 @@ button{
     align-items: center;
 }
 .icon{
-    max-height: 16px;
-    filter: invert(3%) sepia(3%) saturate(200%) hue-rotate(300deg) brightness(95%) contrast(88%);
+    max-height: 40px;
 }
+.icon:hover{
+    transition: .3s;
+    transform: scale(110%);
+}
+
 
 /* 반응형 */
 @media(max-width: 400px){
