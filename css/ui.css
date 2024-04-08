@@ -4,9 +4,9 @@ html {
     overflow: scroll;
   }
 body{
-    background: var(--gray-100);
+    background: var(--gray-50);
     margin: 0px;
-    font-family: 'Bilo', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-weight: 300;
     font-style: normal;
     -webkit-user-select: none;
@@ -47,12 +47,6 @@ article{
     opacity: 0;
     transition: all .5s;
 }
-/* Background */
-/* .bg-black{
-    background: hsla(240, 17%, 15%, 1);
-    overflow: hidden;
-} */
-
 
 /* color */
 :root{
@@ -80,7 +74,6 @@ article{
 }
 
 .h0{
-    font-family: 'Barlow', sans-serif;
     font-size: 640px;
     font-style: normal;
     font-weight: 800;
@@ -88,7 +81,6 @@ article{
 }
 
 .h1{
-    font-family: 'Barlow', sans-serif;
     font-size: 80px;
     font-style: normal;
     font-weight: 700;
@@ -96,6 +88,7 @@ article{
 }
 
 .h2{
+    font-family: 'Bilo', sans-serif;
     font-size: 80px;
     font-style:normal;
     font-weight:300;
@@ -103,8 +96,7 @@ article{
 }
 
 .h3{
-    font-family: 'Barlow', sans-serif;
-    font-size: 48px;
+    font-size: 44px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -112,7 +104,6 @@ article{
 }
 
 .h4{
-    font-family: 'Barlow', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -120,9 +111,15 @@ article{
     color: var(--gray-900);
 }
 
+.logo{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
 .p1{
     /* Button Title style */
-    font-family: 'Barlow', sans-serif;
     font-size: 48px;
     font-style : normal;
     font-weight: 400;
@@ -131,7 +128,6 @@ article{
 }
 
 .p2{
-    font-family: 'Barlow', sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
@@ -140,6 +136,7 @@ article{
 }
 
 .p3{
+    font-family: 'Bilo', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
@@ -229,28 +226,27 @@ article{
     flex: 1 1 auto;
     padding: 5vw 0 10vw;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     background-color: var(--gray-900);
 }
 .main-text{
     align-content: flex-start;
-    margin:  28vh 10vw 5vh;
+    margin:  10vh 10vw 0;
     z-index: 1;
     color:var(--gray-50);
 }
 .main-title{
     display: inline-flex;
     align-items: flex-start;
-    gap: 64px;
+    gap: 4rem;
     color:var(--secondary-300);
+    margin-top: -56px;
 }
 
 /* main project list 메인 프로젝트 리스트 */
-
 .main-project-list{
     display: flex;
     width: 100%;
@@ -265,7 +261,7 @@ article{
 .main-project-thum-left,
 .main-project-thum-right{
     display: flex;
-    width: calc(50% - 1rem);
+    width: calc(50%);
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
@@ -277,14 +273,30 @@ article{
 .main-project-thum-right{
     padding: 0.5rem 20.75rem 3rem 0.625rem;
 }
+.main-project-thum{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 0 0;
+}
 .img-main-project {
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 70vh;
     align-self: stretch;
     border-radius: 0.5rem;
     transition: .3s ease;
     margin-top: 3vw;
+}
+.img-main-project:hover {
+    transform: scale(1.01);
+    filter: brightness(80%);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.img-main-project.small{
+    height: 30rem;
 }
 .img-main-project.first{
     background-image: url('/img/img_thum_1.webp');
@@ -309,6 +321,36 @@ article{
     gap: .5rem;
     align-self: stretch;
 }
+
+/* main-project-list-etc 가장 하단에 들어가는 3개짜리 컬럼 리스트*/
+.main-project-list-etc{
+    display: flex;
+    width: 100%;
+    padding: 11rem 20.75rem 4rem 20.75rem;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+.main-project-group-3{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    align-self: stretch;
+}
+.btn-scroll{
+    display: flex;
+    padding: 0 .75rem;
+    z-index: 1;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5vw;
+}
+
+
+
+
 
 
 
@@ -482,7 +524,7 @@ article{
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    gap: 3vw;
+    gap: 2.5rem;
 }
 .footer-stretch{
     display: flex;
@@ -497,7 +539,7 @@ article{
 .border-d{
     width: 100%;
     height: .75px;
-    background: #49495A;
+    background: var(--gray-400);
 }
 
 #lockedContent {
