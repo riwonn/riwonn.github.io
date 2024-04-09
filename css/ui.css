@@ -4,9 +4,9 @@ html {
     overflow: scroll;
   }
 body{
-    background: var(--gray-50);
+    background-color: var(--gray-50);
     margin: 0px;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Bayon", sans-serif;
     font-weight: 300;
     font-style: normal;
     -webkit-user-select: none;
@@ -60,7 +60,7 @@ article{
     --gray-700: #5A5A5A;
     --gray-800: #3B3B3B;
     --gray-900: #1B1B1B;
-    --main-300: #F23040;
+    --main-300: #1c63f1;
     --main-400: #C40425;
     --main-500: #88081E;
     --secondary-300: #868EA6;
@@ -88,7 +88,7 @@ article{
 }
 
 .h2{
-    font-family: 'Bilo', sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-size: 80px;
     font-style:normal;
     font-weight:300;
@@ -112,7 +112,7 @@ article{
 }
 
 .logo{
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -124,7 +124,7 @@ article{
     font-style : normal;
     font-weight: 400;
     line-height: 100%;
-    color: var(--gray-700);
+    color: var(--gray-800);
 }
 
 .p2{
@@ -132,92 +132,18 @@ article{
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
-    color: var(--gray-700);
+    color: var(--gray-800);
 }
 
 .p3{
-    font-family: 'Bilo', sans-serif;
-    font-size: 20px;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-weight: 300;
-    line-height: 140%;
-    color: var(--gray-700);
+    line-height: 1.6em;
+    color: var(--gray-800);
 }
 
-
-
-
-/* old styles */
-    /* .main{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 68px;
-        line-height: 110%;
-        transition: .3s;
-        z-index: 1;
-    }
-    .main.light{
-        font-weight: 300;
-    }
-    .title{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height:100%;
-    }
-    .title.main-project{
-        line-height: 150%;
-    }
-    .body0{
-        font-family: 'Spectral', serif;
-        font-weight: 200;
-        font-size: 36px;
-        line-height: 130%;
-        transition: .3s;
-        color: #F8F8FB;
-        word-wrap: break-word;
-        text-decoration: inherit;
-        }  
-
-    .body1{
-        font-family: 'Spectral', serif;
-        font-weight: 200;
-        font-size: 28px;
-        line-height: 130%;
-        transition: .3s;
-        color: #F8F8FB;
-        }   
-    .title.project{
-        margin-top: 16vh;
-        text-align: -webkit-center;
-        }
-    .title.otherProject{
-        margin: 114px 0 40px 0;
-        text-align: -webkit-center;
-    }
-    .body2{
-        font-size: 20px;
-        line-height: 170%;
-        color: #D6D6E3;
-    }
-    .caption{
-        font-size: 16px;
-        line-height: 150%;
-        color: #A7A6BB;
-    }
-    .caption.bold{
-        color: var(--gray-50);
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 120%;
-    }
-    .caption.bold.cneter{
-        text-align: -webkit-center;
-    }
-    .link{
-        color: var(--main-300);
-        text-decoration: none;
-    } */
 
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */
 /*Main Text*/
@@ -230,7 +156,7 @@ article{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: var(--gray-900);
+    background-color: var(--main-300);
 }
 .main-text{
     align-content: flex-start;
@@ -283,21 +209,20 @@ article{
 .img-main-project {
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
+    width: 100%; /* 부모 요소의 너비를 100%로 설정하여 비율을 유지하도록 함 */
+    padding-top: 133.33%; /* 3:4 비율을 유지하기 위해 높이를 설정함 (4 / 3 * 100) */
     align-self: stretch;
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
     transition: .3s ease;
     margin-top: 3vw;
 }
 .img-main-project:hover {
-    transform: scale(1.01);
+    transform: scale(1.02) rotate(1deg);
     filter: brightness(80%);
     transition: transform 0.3s, filter 0.3s;
 }
 
-.img-main-project.small{
-    height: 30rem;
-}
 .img-main-project.first{
     background-image: url('/img/img_thum_1.webp');
 }
