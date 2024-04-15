@@ -144,7 +144,6 @@ article{
     color: var(--gray-800);
 }
 
-
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */
 /*Main Text*/
 .main-page{
@@ -272,8 +271,6 @@ article{
     transform: translateX(-50%);
     bottom: 5vw;
 }
-
-
 
 
 
