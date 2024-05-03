@@ -4,12 +4,12 @@
  	grid-template-rows: repeat(auto-fill,minmax(100px, auto));
   	place-items: start stretch;
 	z-index: 1;
+    padding: 0 12rem;
    	grid-template-areas: 
   	'aboutMe'
    	'skill'
 	'experience'
     'project';
-	padding: 3vw;
 	overflow: hidden;
 }
 .img-profile-deco{
@@ -78,14 +78,17 @@
     flex: 1 1 auto;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 20vw;
-    padding: 24px 0 64px;
+    gap: 1rem;
+}
+.column > * {
+    flex: 1 1 50%;
 }
 .column span{
     width: 100%;
 }
 .column.small{
-    gap: 5vw;
+    gap: 1rem;
+    padding: 5rem 0;
 }
 .flex{
     flex: 1 1 0;
@@ -96,11 +99,11 @@
     line-height: 130%;
 }
 .height{
-    display: flex;
-    justify-content: column;
+    /* display: flex;
+    justify-content: column; */
     margin-bottom: 1em;
 }
-@media(min-width: 700px){
+/* @media(min-width: 700px){
     .item-aboutMe:nth-child(1){
 		grid-area: aboutMe;
 		align-items: center;
@@ -142,4 +145,4 @@
         grid-area: experience;
         padding: 0;
     }
-}
+} */

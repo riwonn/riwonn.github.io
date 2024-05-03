@@ -60,10 +60,14 @@ article{
     --gray-700: #5A5A5A;
     --gray-800: #3B3B3B;
     --gray-900: #1B1B1B;
-    --main-300: #1c63f1;
+    --main-300: #F23040;
     --main-400: #C40425;
     --main-500: #88081E;
     --secondary-300: #868EA6;
+}
+/* color */
+.color-main-300{
+    color: var(--main-300);
 }
 
 /* Text Style */
@@ -88,7 +92,6 @@ article{
 }
 
 .h2{
-    font-family: "proxima-nova", sans-serif;
     font-size: 80px;
     font-style:normal;
     font-weight:300;
@@ -100,7 +103,6 @@ article{
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    color: var(--gray-900);
 }
 
 .h4{
@@ -108,7 +110,6 @@ article{
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    color: var(--gray-900);
 }
 
 .logo{
@@ -120,6 +121,7 @@ article{
 
 .p1{
     /* Button Title style */
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 48px;
     font-style : normal;
     font-weight: 400;
@@ -128,20 +130,25 @@ article{
 }
 
 .p2{
-    font-size: 40px;
+    /* p2 */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2.5rem;
     font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
+    font-weight: 400;
+    line-height: 140%; /* 3.5rem */
     color: var(--gray-800);
 }
 
 .p3{
-    font-family: "proxima-nova", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: 1.6em;
     color: var(--gray-800);
+}
+.p3.bold{
+    font-weight: 500;
 }
 
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */
