@@ -54,21 +54,37 @@ const bigMenuDark = document.querySelector('#bigMenuDark');
 if (bigMenu) {
     bigMenu.innerHTML = `
         <nav class="btn_group">
+<<<<<<< HEAD
             <a href="https://www.riwonk.com/" class="menu-link logo">RiwonK</a>
             <a href="https://www.riwonk.com/#first" class="menu-link p3">Work</a>
             <a href="extras.html" class="menu-link p3">Extras</a>
             <a href="aboutMe.html" class="menu-link p3">About</a>
+=======
+            <a href="https://www.everiwon.com/" class="menu-link logo white">EVERiwon</a>
+            <a href="https://www.everiwon.com/#first" class="body2">Work</a>
+            <a href="extras.html" class="body2">Extras</a>
+            <a href="aboutMe.html" class="body2">About</a>
+            <button class="img-switch" onclick="changeColor()"></button>
+>>>>>>> parent of 611d2c5 (.)
         </nav>
     `;
 }
 if (bigMenuDark) {
     bigMenuDark.innerHTML = `
         <nav class="btn_group">
+<<<<<<< HEAD
             <a href="https://www.riwonk.com/" class="menu-link logo">RiwonK</a>
             <a href="https://www.riwonk.com/#first" class="menu-link p3">Work</a>
             <a href="extras.html" class="menu-link p3">ARCHIVE</a>
             <a href="blog.html" class="menu-link p3">BLOG</a>
             <a href="aboutMe.html" class="menu-link p3">About</a>
+=======
+            <a href="https://www.everiwon.com/" class="menu-link logo white">EVERiwon</a>
+            <a href="https://www.everiwon.com/#first" class="body2">Work</a>
+            <a href="extras.html" class="body2">Extras</a>
+            <a href="aboutMe.html" class="body2">About</a>
+            <button class="img-switch dark" onclick="changeColor()"></button>
+>>>>>>> parent of 611d2c5 (.)
         </nav>
     `;
 }

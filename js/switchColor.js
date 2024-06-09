@@ -15,8 +15,6 @@ function changeColor() {
   var btnBehance = document.querySelectorAll('.btn_behance');
   var btnLinkedin = document.querySelectorAll('.btn_linkedin');
   var btnBlog = document.querySelectorAll('.btn_blog');
-  var btnSide = document.querySelectorAll('.btn-side');
-  var icons = document.querySelectorAll('.icon');
   // var circle = document.querySelectorAll('.main-point');
   var project = document.querySelectorAll('.project');
 
@@ -65,10 +63,6 @@ function changeColor() {
       span.style.color = '#F8F8FB';
     });
 
-    icons.forEach((icon) => {
-      icon.style.filter = 'invert(3%) sepia(3%) saturate(200%) hue-rotate(300deg) brightness(95%) contrast(88%)';
-    });
-
     // circle.forEach((circle) => {
     //   circle.style.border = '1px solid #F8F8FB';
     // })
@@ -88,11 +82,6 @@ function changeColor() {
     });
     btnBlog.forEach((btn) => {
       btn.style.backgroundImage = 'url("/img/btn_main_blog_dark.svg")';
-    });
-
-    btnSide.forEach((btnSide) => {
-      btnSide.style.border = '1.5px solid hsla(240, 8%, 53%, 1)';
-      btnSide.style.backgroundColor = 'hsla(240, 10%, 32%, 0.1)';
     });
 
     bigMenu.classList.replace('menu-light', 'menu-dark');
@@ -135,15 +124,6 @@ function changeColor() {
 
     span.forEach((span) => {
       span.style.color = '#20202D';
-    });
-
-    btnSide.forEach((btnSide) => {
-      btnSide.style.border = '1.5px solid hsla(243, 13%, 78%, 1)';
-      btnSide.style.backgroundColor = 'hsla(240, 19%, 86%, .1)';
-    });
-
-    icons.forEach((icon) => {
-      icon.style.filter = 'invert(100%) sepia(63%) saturate(332%) hue-rotate(83deg) brightness(113%) contrast(97%)';
     });
 
     // circle.forEach((circle) => {

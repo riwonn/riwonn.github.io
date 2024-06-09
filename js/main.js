@@ -81,24 +81,7 @@ btnTop.addEventListener('mouseleave', () => {
     }
 });
 
-
-let scrolling; // setTimeout() 메서드를 할당하는 전역 변수
-window.addEventListener('scroll', (e) => {
-    if (!scrolling) {
-    	btnTop.style.display = 'flex';
-      btnTop.style.opacity = '1';
-    }
-    // 일정시간(4000ms) 뒤에 스크롤 동작 멈춤을 감지
-    clearTimeout(scrolling);
-    scrolling = setTimeout(() => {
-      btnTop.style.opacity = '0';
-      setTimeout(function () {
-        btnTop.style.display = 'none';
-      }, 300);
-        scrolling = undefined;
-    }, 4000);
-})
-
+  
 // 스크롤 이벤트 핸들러
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
