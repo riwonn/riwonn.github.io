@@ -9,7 +9,6 @@
    	'skill'
 	'experience'
     'project';
-	padding: 3vw;
 	overflow: hidden;
 }
 .img-profile-deco{
@@ -31,7 +30,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     /* 원의 가로 세로 크기 설정 (원이 둥글게 보이도록) */
-    border: 1px solid var(--main, #E73C50);
+    border: 1px solid var(--main-300);
     border-radius: 50%;
     /* 원의 크기에 따라 다른 값을 적용해줄 수 있습니다. */
   }
@@ -75,20 +74,30 @@
 }
 .column{
     display: flex;
-    flex: 1 1 auto;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 20vw;
-    padding: 24px 0 64px;
+    align-items: flex-start;
+    gap: 1.25rem;
+    align-self: stretch;
 }
-.column span{
-    width: 100%;
+.column div{
+    flex: 1 0 0;
+}
+.column.big{
+    padding: 12rem 12rem;
+    background: var(--main-500);
+    color: var(--gray-50);
 }
 .column.small{
-    gap: 5vw;
+    margin: 0 12rem;
+    padding: 5rem 0;
+    flex: 1 1 auto;
+    border-bottom: 0.75px solid var(--gray-400, #B5B5B5);
 }
+
 .flex{
+    display: flex;
+    flex-direction: column;
     flex: 1 1 0;
+    gap: 1rem;
 }
 .logo{
     font-weight: 600;
@@ -96,11 +105,11 @@
     line-height: 130%;
 }
 .height{
-    display: flex;
-    justify-content: column;
+    /* display: flex;
+    justify-content: column; */
     margin-bottom: 1em;
 }
-@media(min-width: 700px){
+/* @media(min-width: 700px){
     .item-aboutMe:nth-child(1){
 		grid-area: aboutMe;
 		align-items: center;
@@ -142,4 +151,4 @@
         grid-area: experience;
         padding: 0;
     }
-}
+} */

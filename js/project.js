@@ -59,7 +59,7 @@ $(document).ready(function() {
   for (var i = 0; i < projects.length; i++) {
     (function(index) {
       var item = $("<div class='card-half'></div>");
-      var link = $("<a href='" + projects[index].url + "' class='card-img-half'></a>");
+      var link = $("<a href='" + projects[index].url + "' class='main-img-project-half'></a>");
       link.css("background-image", "url(" + projects[index].src + ")");
       item.append(link);
 
